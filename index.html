@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment-14</title>
+  </head>
+
+  <body>
+    
+    <div class="fiver-wraper w-50 m-auto mt-5">
+        <div class="card text-center pt-3">
+            <h1 class="text-primary">Fiverr Time Counter</h1>
+            <hr>
+            <div class="card-body my-3">
+                <form class="d-flex justify-content-center" id="fiver-order" action="#">
+                    <div class="form-group">
+                        <input class="form-control"id="date" type="date">
+                    </div>
+                    <div class="form-group me-2 ms-2">
+                        <input class="form-control" id="time" type="time">
+                    </div>
+                    <div class="form-group">
+                        <input class=" form-control btn-success" id="time" type="submit" value="Order">
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="counter text-center pb-3">
+                <p class="output display-1 fw-bold"></p>
+            </div>
+        </div>
+    
+    </div>  
+
+
+    <div class="age-wraper w-50 m-auto mt-5">
+        <div class="card text-center pt-3">
+            <h1 class="text-primary">Age Calculator</h1>
+            <hr>
+            <div class="card-body my-3">
+                <form class="text-center" id="agecall" action="#">
+                    <div class="form-group">
+                        <label for=""><strong>Name:</strong></label>
+                        <input class="form-control text-center"id="name" type="text" placeholder="Type Your Name">
+                    </div>
+                    <div class="form-group my-3">
+                        <label for=""><strong>Date of Birth:</strong></label>
+                        <input class="form-control text-center"id="birthdate" type="date">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for=""><strong>Gender:</strong></label>
+                        <input type="radio" value="male" name="gender" id="male"> Male
+                        <input type="radio" value="female" name="gender" id="female"> Female
+                    </div>
+                    <div class="form-group">
+                        <input class=" form-control btn-success" id="sbmtbtn" type="submit" value="Calculate">
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="calculator text-center fs-6 fw-bold pb-3">
+
+            </div>
+
+        </div>
+    
+    </div>  
+
+
+    <div class="todo-wraper w-50 m-auto my-5">
+        <div class="card text-center pt-3">
+            <h1 class="text-primary">Todo Form List</h1>
+            <hr>
+            <div class="card-body">
+                <form id="todo-form" class="d-flex justify-content-center" action="">
+                    <div class="form-group">
+                        <input type="text" name="do-name" class="form-control" placeholder="Do Name">
+                    </div>
+                    <div class="form-group mx-2">
+                        <select name="opt" id="" class="form-control">
+                            <option value="">--select--</option>
+                            <option value="Important">Important</option>
+                            <option value="Not Important">Not Important</option>
+                            <option value="Unnecessary">Unnecessary</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class=" btn btn-primary form-control" value="Add">
+                    </div>
+                </form>
+
+                <hr>
+
+                <ul id="list" class="list-group">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+    
+  </body>
+</html>
