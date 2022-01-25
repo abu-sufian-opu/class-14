@@ -31,7 +31,7 @@ function ageCal(e){
     let ageDays = totalDays - (totalYears * 12 * monthCal()) - (ageMonth * monthCal());
     
 
-    calculator.innerHTML = `Hi ${userName} Your age is ${totalYears} ${totalYears <= 1 ? 'Year' : 'Years'} ${ageMonth} ${ageMonth <= 1 ? 'Month' : 'Months'} ${ageDays} ${ageDays <= 1 ? 'Day' : 'Days'}`;
+    calculator.innerHTML = `Hi ${gender == 'male' ? 'Mr.' : 'Mrs.'} ${userName}  Your age is ${totalYears} ${totalYears <= 1 ? 'Year' : 'Years'} ${ageMonth} ${ageMonth <= 1 ? 'Month' : 'Months'} ${ageDays} ${ageDays <= 1 ? 'Day' : 'Days'} <br> ${ageonMsg(totalYears, gender)}`;
     
 
 };
