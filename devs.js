@@ -91,7 +91,7 @@ function allDevs(){
                         <p>${d.title}</p>
                         <span>${d.gender}</span>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body devs-card">
                         <h3>Skill</h3>
                         <ul class="list-group">
                         ${lists}

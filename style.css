@@ -79,3 +79,11 @@ span.regular-price {
     color: crimson;
     font-size: 24px;
 }
+.title h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.devs-card {
+    height: 220px;
+}

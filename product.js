@@ -71,7 +71,7 @@ function allProduct (){
 
                     <div class="card-body">
                         <h5>${ pdata.Name }</h5>
-                        <p><span class="sale-price">${ pdata.Sale_price }</span>  <span class="regular-price">${ pdata.Product_price }</span></p>
+                        <p><span class="sale-price">${ pdata.Sale_price == "" ? "" : pdata.Sale_price + "$" }</span>  <span class="regular-price">${ pdata.Product_price == "" ? "" : pdata.Product_price + "$" }</span></p>
                     </div>
                     <button class="btn btn-primary">Add to Cart</button>
                 </div>
